@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainFxmlController">
+   <children>
+      <Button fx:id="btn" layoutX="724.0" layoutY="42.0" mnemonicParsing="false" onAction="#buttonAction" text="btn" />
+      <TextField fx:id="inputField" layoutX="42.0" layoutY="42.0" prefHeight="25.0" prefWidth="647.0" />
+      <TableView fx:id="table" editable="true" layoutX="41.0" layoutY="106.0" prefHeight="588.0" prefWidth="451.0">
+        <columns>
+          <TableColumn fx:id="col1" prefWidth="75.0" text="C1" />
+          <TableColumn fx:id="col2" prefWidth="114.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn2" layoutX="507.0" layoutY="669.0" mnemonicParsing="false" onAction="#captureText" text="Button" />
+      <TextField fx:id="outputField" layoutX="41.0" layoutY="736.0" prefHeight="25.0" prefWidth="647.0" />
+      <Label layoutX="42.0" layoutY="22.0" text="Input" />
+      <Label layoutX="41.0" layoutY="719.0" text="Output" />
+   </children>
+</AnchorPane>
